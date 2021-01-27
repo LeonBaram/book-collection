@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ubuntu mono from google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+
+    <!-- juno css snippet -->
+    <link rel="stylesheet" href="setup.css">
+    
+    <!-- main css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>bookCollection</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+        <h1 class="sr-only">Book Collection</h1>
+        <h1>bookCollection</h1>
+        <p class="subtitle">showcase and sort your favourite novels</p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+
+            <section class="add-sort">
+
+                <div class="add">
+                    <span id="form-label">Add New Book</span>
+                    <form>
+                        <h2>Add a new book:</h2>
+                        <label class="sr-only" for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="title">
+                        
+                        <label class="sr-only" for="author">Author</label>
+                        <input type="text" name="author" id="author" placeholder="author">
+
+                        <input type="submit" value="Add Book">
+                    </form>
+                </div>
+
+                <div class="sort">
+                    <label for="sort-by">Sort By: </label>
+                    <select name="sort-by" id="sort-by">
+                        <option selected="selected" value="timestamp">Latest
+                        </option>
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                    </select>
+                </div>
+
+            </section>
+
+            <section class="bookshelf-section">
+
+                <ul class="bookshelf">
+                    <!-- books go here -->
+                    
+                </ul>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+        <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
+        </div>
+    </footer>
+    
+
+    <!-- jquery lib from google hosted libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- main js file -->
+    <script src="script.js"></script>
+</body>
+</html>
